@@ -12,26 +12,33 @@
                   android:orientation="vertical"
                   android:padding="20dp">
 
-            <Button
-                android:id="@+id/btn_ratingBar"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:text="Rating Bar"
-                android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/btn_ratingBar"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Rating Bar"
+            android:textAllCaps="false"/>
 
-            <Button
-                android:id="@+id/btn_acceleratingBall"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:text="Accelerating Ball"
-                android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/btn_acceleratingBall"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Accelerating Ball"
+            android:textAllCaps="false"/>
 
-            <Button
-                android:id="@+id/btn_redCarp"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:text="Red Carp"
-                android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/btn_redCarp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Red Carp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btn_eventBus"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="EventBus"
+            android:textAllCaps="false"/>
 
     </LinearLayout>
 </ScrollView>

@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button btn_ratingBar;
     private Button btn_acceleratingBall;
     private Button btn_redCarp;
+    private Button btn_eventBus;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,12 +31,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_ratingBar.setOnClickListener(this);
         btn_acceleratingBall.setOnClickListener(this);
         btn_redCarp.setOnClickListener(this);
+        btn_eventBus.setOnClickListener(this);
     }
 
     private void findAllViews() {
         btn_ratingBar = findViewById(R.id.btn_ratingBar);
         btn_acceleratingBall = findViewById(R.id.btn_acceleratingBall);
         btn_redCarp = findViewById(R.id.btn_redCarp);
+        btn_eventBus = findViewById(R.id.btn_eventBus);
     }
 
     @Override
@@ -49,6 +52,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_redCarp:
                 startActivity(new Intent(this,RedCarpActivity.class));
+                break;
+            case R.id.btn_eventBus:
+                startActivity(new Intent(this,EventBusActivity.class));
                 break;
         }
     }
