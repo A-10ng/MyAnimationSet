@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <com.example.myanimationset.MyView.AcceleratingBallView
+        android:id="@+id/AcceleratingBallView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"/>
+
+    <EditText
+        android:id="@+id/et_progress"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="80dp"
+        android:paddingRight="80dp">
+
+        <Button
+            android:id="@+id/btn_setProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="无动画进度"/>
+
+        <Button
+            android:id="@+id/btn_setProgressWithAnim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="动画进度"/>
+    </LinearLayout>
+
+</LinearLayout>
