@@ -1,5 +1,6 @@
 package com.example.myanimationset.ui;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.RatingBar;
 
 import com.example.myanimationset.R;
@@ -20,6 +22,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button btn_acceleratingBall;
     private Button btn_redCarp;
     private Button btn_eventBus;
+    private Button btn_hintDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +35,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_acceleratingBall.setOnClickListener(this);
         btn_redCarp.setOnClickListener(this);
         btn_eventBus.setOnClickListener(this);
+        btn_hintDialog.setOnClickListener(this);
     }
 
     private void findAllViews() {
@@ -39,6 +43,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_acceleratingBall = findViewById(R.id.btn_acceleratingBall);
         btn_redCarp = findViewById(R.id.btn_redCarp);
         btn_eventBus = findViewById(R.id.btn_eventBus);
+        btn_hintDialog = findViewById(R.id.btn_hintDialog);
     }
 
     @Override
@@ -55,6 +60,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_eventBus:
                 startActivity(new Intent(this,EventBusActivity.class));
+                break;
+            case R.id.btn_hintDialog:
+                startActivity(new Intent(this,HintDialogActivity.class));
                 break;
         }
     }

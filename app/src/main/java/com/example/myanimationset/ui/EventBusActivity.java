@@ -2,6 +2,7 @@ package com.example.myanimationset.ui;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -18,6 +19,8 @@ public class EventBusActivity extends AppCompatActivity {
     private Button btn_increaseNumber;
     private TextView tv_number;
     private int num = 1;
+    private View view;
+    private static final String TAG = "EventBusActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

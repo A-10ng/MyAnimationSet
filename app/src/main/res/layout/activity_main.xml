@@ -40,5 +40,12 @@
             android:text="EventBus"
             android:textAllCaps="false"/>
 
+        <Button
+            android:id="@+id/btn_hintDialog"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="HintDialog"
+            android:textAllCaps="false"/>
+
     </LinearLayout>
 </ScrollView>
