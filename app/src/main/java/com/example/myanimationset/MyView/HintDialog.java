@@ -5,6 +5,7 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -12,6 +13,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.example.myanimationset.R;
 import com.example.myanimationset.utils.Utils;
@@ -26,8 +28,10 @@ public class HintDialog extends Dialog {
 
     private Context context;
     private Button btn_sure;
+    private TextView tv_content;
     private View view;
     private yesOnClickListener listener;
+    private String content;
 
     public HintDialog( Context context) {
         super(context);
@@ -64,7 +68,13 @@ public class HintDialog extends Dialog {
         setCanceledOnTouchOutside(false);
 
         btn_sure = view.findViewById(R.id.btn_sure);
-        Log.i("HintDialog", "btn_sure");
+        tv_content = view.findViewById(R.id.tv_content);
+
+        if (!TextUtils.isEmpty(content)){
+            tv_content.setText(content);
+        }
+
+        Log.i("HintDialog", "onCreate: after setText");
 
         btn_sure.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -72,6 +82,10 @@ public class HintDialog extends Dialog {
                 listener.clickYes();
             }
         });
+    }
+
+    public void setContent(String content){
+        this.content = content;
     }
 
     public void setOnClickBtnListener(yesOnClickListener listener){

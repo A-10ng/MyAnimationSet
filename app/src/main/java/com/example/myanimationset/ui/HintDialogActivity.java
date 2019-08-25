@@ -22,6 +22,7 @@ public class HintDialogActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 final HintDialog hintDialog = new HintDialog(HintDialogActivity.this,R.style.hintDialog);
+                hintDialog.setContent("hahahah");
                 hintDialog.setOnClickBtnListener(new HintDialog.yesOnClickListener() {
                     @Override
                     public void clickYes() {
