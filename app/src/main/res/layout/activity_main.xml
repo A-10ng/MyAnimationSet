@@ -47,5 +47,12 @@
             android:text="HintDialog"
             android:textAllCaps="false"/>
 
+        <Button
+            android:id="@+id/btn_simpleLoadingBar"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="SimpleLoadingBar"
+            android:textAllCaps="false"/>
+
     </LinearLayout>
 </ScrollView>

@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button btn_redCarp;
     private Button btn_eventBus;
     private Button btn_hintDialog;
+    private Button btn_simpleLoadingBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +37,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_redCarp.setOnClickListener(this);
         btn_eventBus.setOnClickListener(this);
         btn_hintDialog.setOnClickListener(this);
+        btn_simpleLoadingBar.setOnClickListener(this);
     }
 
     private void findAllViews() {
@@ -44,6 +46,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_redCarp = findViewById(R.id.btn_redCarp);
         btn_eventBus = findViewById(R.id.btn_eventBus);
         btn_hintDialog = findViewById(R.id.btn_hintDialog);
+        btn_simpleLoadingBar = findViewById(R.id.btn_simpleLoadingBar);
     }
 
     @Override
@@ -63,6 +66,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_hintDialog:
                 startActivity(new Intent(this,HintDialogActivity.class));
+                break;
+            case R.id.btn_simpleLoadingBar:
+                startActivity(new Intent(this,SimpleLoadingBarActivity.class));
                 break;
         }
     }

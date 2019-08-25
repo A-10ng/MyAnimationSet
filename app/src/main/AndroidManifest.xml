@@ -9,6 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ui.SimpleLoadingBarActivity">
+        </activity>
         <activity android:name=".ui.HintDialogActivity">
         </activity>
         <activity android:name=".ui.EventBusActivity">
