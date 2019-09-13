@@ -116,6 +116,7 @@ public class AcceleratingBallView extends View {
      */
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        super.setMeasuredDimension(widthMeasureSpec,heightMeasureSpec);
         setMeasuredDimension(measureWidth(widthMeasureSpec), measuredHeight(heightMeasureSpec));
     }
 

@@ -54,5 +54,19 @@
             android:text="SimpleLoadingBar"
             android:textAllCaps="false"/>
 
+        <Button
+            android:id="@+id/btn_staticFragment"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="StaticFragment"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btn_videoPlayer"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="VideoPlayer"
+            android:textAllCaps="false"/>
+
     </LinearLayout>
 </ScrollView>
