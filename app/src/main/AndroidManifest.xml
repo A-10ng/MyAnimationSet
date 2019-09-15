@@ -13,7 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.VideoPlayerActivity">
+        <activity android:name=".ui.VideoPlayerActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden">
         </activity>
         <activity android:name=".ui.SecondFragmentActivity">
         </activity>

@@ -7,13 +7,16 @@
     tools:context=".ui.VideoPlayerActivity">
 
     <RelativeLayout
+        android:id="@+id/videoLayout"
         android:layout_width="match_parent"
         android:layout_height="240dp">
 
-        <VideoView
+        <com.example.myanimationset.MyView.CustomVideoView
             android:id="@+id/videoView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
+
+        <include layout="@layout/layout_progress"/>
 
         <LinearLayout
             android:id="@+id/controllerbar_layout"
@@ -91,7 +94,8 @@
                     android:layout_height="match_parent">
                     
                     <ImageView
-                        android:visibility="visible"
+                        android:id="@+id/volume_img"
+                        android:visibility="gone"
                         android:src="@drawable/volumn"
                         android:layout_width="26dp"
                         android:layout_height="26dp"
@@ -99,7 +103,7 @@
                     
                     <SeekBar
                         android:id="@+id/volumn_seek"
-                        android:visibility="visible"
+                        android:visibility="gone"
                         android:thumb="@null"
                         android:progressDrawable="@drawable/seekbar_style"
                         android:progress="20"
