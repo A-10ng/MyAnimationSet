@@ -1,20 +1,12 @@
-package com.example.myanimationset.ui;
+package com.example.myanimationset.UI;
 
-import android.app.Dialog;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.LinearLayout;
-import android.widget.ProgressBar;
-import android.widget.RatingBar;
 
 import com.example.myanimationset.R;
-
-import static com.example.myanimationset.utils.Utils.dp2px;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -26,6 +18,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button btn_simpleLoadingBar;
     private Button btn_staticFragment;
     private Button btn_videoPlayer;
+    private Button btn_recyclerviewAnimation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +35,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_simpleLoadingBar.setOnClickListener(this);
         btn_staticFragment.setOnClickListener(this);
         btn_videoPlayer.setOnClickListener(this);
+        btn_recyclerviewAnimation.setOnClickListener(this);
     }
 
     private void findAllViews() {
@@ -53,6 +47,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_simpleLoadingBar = findViewById(R.id.btn_simpleLoadingBar);
         btn_staticFragment = findViewById(R.id.btn_staticFragment);
         btn_videoPlayer = findViewById(R.id.btn_videoPlayer);
+        btn_recyclerviewAnimation = findViewById(R.id.btn_recyclerviewAnimation);
     }
 
     @Override
@@ -81,6 +76,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_videoPlayer:
                 startActivity(new Intent(this,VideoPlayerActivity.class));
+                break;
+            case R.id.btn_recyclerviewAnimation:
+                startActivity(new Intent(MainActivity.this,RecyclerviewAnimationActivity.class));
                 break;
         }
     }

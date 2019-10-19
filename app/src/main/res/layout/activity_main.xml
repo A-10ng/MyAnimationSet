@@ -68,5 +68,12 @@
             android:text="VideoPlayer"
             android:textAllCaps="false"/>
 
+        <Button
+            android:id="@+id/btn_recyclerviewAnimation"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="RecyclerviewAnimation"
+            android:textAllCaps="false"/>
+
     </LinearLayout>
 </ScrollView>

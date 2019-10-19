@@ -1,4 +1,4 @@
-package com.example.myanimationset.utils;
+package com.example.myanimationset.Utils;
 
 import android.content.Context;
 

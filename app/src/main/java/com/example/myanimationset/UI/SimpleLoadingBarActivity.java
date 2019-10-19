@@ -1,10 +1,8 @@
-package com.example.myanimationset.ui;
+package com.example.myanimationset.UI;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.view.animation.AlphaAnimation;
 import android.widget.Button;
 
 import com.example.myanimationset.MyView.SimpleLoadingBar;

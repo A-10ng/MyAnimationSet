@@ -9,7 +9,7 @@ import android.view.Window;
 import android.view.WindowManager;
 
 import com.example.myanimationset.R;
-import com.example.myanimationset.utils.Utils;
+import com.example.myanimationset.Utils.Utils;
 
 /**
  * author：LongSh1z

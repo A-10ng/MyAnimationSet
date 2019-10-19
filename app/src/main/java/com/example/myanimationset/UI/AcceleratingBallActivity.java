@@ -1,4 +1,4 @@
-package com.example.myanimationset.ui;
+package com.example.myanimationset.UI;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

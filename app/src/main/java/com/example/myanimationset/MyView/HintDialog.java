@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.Gravity;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -16,7 +15,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.myanimationset.R;
-import com.example.myanimationset.utils.Utils;
+import com.example.myanimationset.Utils.Utils;
 
 /**
  * author：LongSh1z

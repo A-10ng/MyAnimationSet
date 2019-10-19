@@ -13,8 +13,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.example.myanimationset.R;
-import com.example.myanimationset.ui.MainActivity;
-import com.example.myanimationset.ui.SecondFragmentActivity;
+import com.example.myanimationset.UI.SecondFragmentActivity;
 
 /**
  * author：LongSh1z
