@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button btn_staticFragment;
     private Button btn_videoPlayer;
     private Button btn_recyclerviewAnimation;
+    private Button btn_launchingView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +37,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_staticFragment.setOnClickListener(this);
         btn_videoPlayer.setOnClickListener(this);
         btn_recyclerviewAnimation.setOnClickListener(this);
+        btn_launchingView.setOnClickListener(this);
     }
 
     private void findAllViews() {
@@ -48,6 +50,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_staticFragment = findViewById(R.id.btn_staticFragment);
         btn_videoPlayer = findViewById(R.id.btn_videoPlayer);
         btn_recyclerviewAnimation = findViewById(R.id.btn_recyclerviewAnimation);
+        btn_launchingView = findViewById(R.id.btn_launchingView);
     }
 
     @Override
@@ -79,6 +82,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_recyclerviewAnimation:
                 startActivity(new Intent(MainActivity.this,RecyclerviewAnimationActivity.class));
+                break;
+            case R.id.btn_launchingView:
+                startActivity(new Intent(MainActivity.this,LaunchingViewActivity.class));
                 break;
         }
     }

@@ -75,5 +75,12 @@
             android:text="RecyclerviewAnimation"
             android:textAllCaps="false"/>
 
+        <Button
+            android:id="@+id/btn_launchingView"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="LaunchingView"
+            android:textAllCaps="false"/>
+
     </LinearLayout>
 </ScrollView>

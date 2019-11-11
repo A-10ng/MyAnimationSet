@@ -13,6 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".UI.LaunchingViewActivity">
+        </activity>
         <activity android:name=".UI.RecyclerviewAnimationActivity">
         </activity>
         <activity
