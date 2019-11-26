@@ -20,6 +20,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button btn_videoPlayer;
     private Button btn_recyclerviewAnimation;
     private Button btn_launchingView;
+    private Button btn_bigPicture;
+    private Button btn_recyclerViewEncapsulation;
+    private Button btn_treeView;
+    private Button btn_workFlow;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +42,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_videoPlayer.setOnClickListener(this);
         btn_recyclerviewAnimation.setOnClickListener(this);
         btn_launchingView.setOnClickListener(this);
+        btn_bigPicture.setOnClickListener(this);
+        btn_recyclerViewEncapsulation.setOnClickListener(this);
+        btn_treeView.setOnClickListener(this);
+        btn_workFlow.setOnClickListener(this);
     }
 
     private void findAllViews() {
@@ -51,6 +59,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_videoPlayer = findViewById(R.id.btn_videoPlayer);
         btn_recyclerviewAnimation = findViewById(R.id.btn_recyclerviewAnimation);
         btn_launchingView = findViewById(R.id.btn_launchingView);
+        btn_bigPicture = findViewById(R.id.btn_bigPicture);
+        btn_recyclerViewEncapsulation = findViewById(R.id.btn_recyclerViewEncapsulation);
+        btn_treeView = findViewById(R.id.btn_treeView);
+        btn_workFlow = findViewById(R.id.btn_workFlow);
     }
 
     @Override
@@ -85,6 +97,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_launchingView:
                 startActivity(new Intent(MainActivity.this,LaunchingViewActivity.class));
+                break;
+            case R.id.btn_bigPicture:
+                startActivity(new Intent(MainActivity.this,BigPictureActivity.class));
+                break;
+            case R.id.btn_recyclerViewEncapsulation:
+                startActivity(new Intent(MainActivity.this,RecyclerViewEncapsulationActivity.class));
+                break;
+            case R.id.btn_treeView:
+                startActivity(new Intent(MainActivity.this,TreeViewActivity.class));
+                break;
+            case R.id.btn_workFlow:
+                startActivity(new Intent(MainActivity.this,WorkFlowActivity.class));
                 break;
         }
     }
