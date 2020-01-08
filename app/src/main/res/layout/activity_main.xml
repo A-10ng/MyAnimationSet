@@ -110,5 +110,12 @@
             android:text="WorkFlow"
             android:textAllCaps="false"/>
 
+        <Button
+            android:id="@+id/btn_ChrysanthemumLoadingDialogActivity"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="ChrysanthemumLoadingDialog"
+            android:textAllCaps="false"/>
+
     </LinearLayout>
 </ScrollView>

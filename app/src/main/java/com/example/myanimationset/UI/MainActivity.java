@@ -1,12 +1,14 @@
 package com.example.myanimationset.UI;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
 import com.example.myanimationset.R;
+import com.example.myanimationset.Utils.Utils;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -24,6 +26,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button btn_recyclerViewEncapsulation;
     private Button btn_treeView;
     private Button btn_workFlow;
+    private Button btn_ChrysanthemumLoadingDialogActivity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +35,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         findAllViews();
 
+        setViewsOnClick();
+    }
+
+    private void setViewsOnClick() {
         btn_ratingBar.setOnClickListener(this);
         btn_acceleratingBall.setOnClickListener(this);
         btn_redCarp.setOnClickListener(this);
@@ -46,6 +53,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_recyclerViewEncapsulation.setOnClickListener(this);
         btn_treeView.setOnClickListener(this);
         btn_workFlow.setOnClickListener(this);
+        btn_ChrysanthemumLoadingDialogActivity.setOnClickListener(this);
     }
 
     private void findAllViews() {
@@ -63,6 +71,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_recyclerViewEncapsulation = findViewById(R.id.btn_recyclerViewEncapsulation);
         btn_treeView = findViewById(R.id.btn_treeView);
         btn_workFlow = findViewById(R.id.btn_workFlow);
+        btn_ChrysanthemumLoadingDialogActivity = findViewById(R.id.btn_ChrysanthemumLoadingDialogActivity);
     }
 
     @Override
@@ -109,6 +118,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_workFlow:
                 startActivity(new Intent(MainActivity.this,WorkFlowActivity.class));
+                break;
+            case R.id.btn_ChrysanthemumLoadingDialogActivity:
+                startActivity(new Intent(MainActivity.this,ChrysanthemumLoadingDialogActivity.class));
                 break;
         }
     }
