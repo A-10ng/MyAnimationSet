@@ -117,5 +117,12 @@
             android:text="ChrysanthemumLoadingDialog"
             android:textAllCaps="false"/>
 
+        <Button
+            android:id="@+id/btn_spinner"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="SpinnerActivity"
+            android:textAllCaps="false"/>
+
     </LinearLayout>
 </ScrollView>

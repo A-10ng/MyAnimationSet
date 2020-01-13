@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button btn_treeView;
     private Button btn_workFlow;
     private Button btn_ChrysanthemumLoadingDialogActivity;
+    private Button btn_spinner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +55,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_treeView.setOnClickListener(this);
         btn_workFlow.setOnClickListener(this);
         btn_ChrysanthemumLoadingDialogActivity.setOnClickListener(this);
+        btn_spinner.setOnClickListener(this);
     }
 
     private void findAllViews() {
@@ -72,6 +74,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_treeView = findViewById(R.id.btn_treeView);
         btn_workFlow = findViewById(R.id.btn_workFlow);
         btn_ChrysanthemumLoadingDialogActivity = findViewById(R.id.btn_ChrysanthemumLoadingDialogActivity);
+        btn_spinner = findViewById(R.id.btn_spinner);
     }
 
     @Override
@@ -121,6 +124,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_ChrysanthemumLoadingDialogActivity:
                 startActivity(new Intent(MainActivity.this,ChrysanthemumLoadingDialogActivity.class));
+                break;
+            case R.id.btn_spinner:
+                startActivity(new Intent(MainActivity.this,SpinnerActivity.class));
                 break;
         }
     }
