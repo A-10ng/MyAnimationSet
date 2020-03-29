@@ -124,5 +124,12 @@
             android:text="SpinnerActivity"
             android:textAllCaps="false"/>
 
+        <Button
+            android:id="@+id/btn_expandableRecyclerview"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="ExpandableRecyclerviewActivity"
+            android:textAllCaps="false"/>
+
     </LinearLayout>
 </ScrollView>
