@@ -2,14 +2,14 @@ package com.example.myanimationset.Base;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.widget.SwipeRefreshLayout;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.RecyclerView;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.example.library.RViewHelper;
 import com.example.library.SwipeRefreshHelper;
-import com.example.library.base.RViewAdapter;
 import com.example.library.listener.RViewCreate;
 import com.example.myanimationset.R;
 

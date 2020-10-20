@@ -1,7 +1,8 @@
 package com.example.myanimationset.Adapter.ExpandableAdapter;
 
-import android.support.v7.widget.RecyclerView;
 import android.view.ViewGroup;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 /**
  * author：LongSh1z

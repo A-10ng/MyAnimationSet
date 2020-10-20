@@ -1,6 +1,7 @@
 package com.example.myanimationset.Adapter.ExpandableAdapter;
 
-import android.support.v7.widget.GridLayoutManager;
+
+import androidx.recyclerview.widget.GridLayoutManager;
 
 /**
  * author：LongSh1z

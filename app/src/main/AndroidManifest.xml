@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.example.myanimationset">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myanimationset">
 
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -13,50 +14,35 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".UI.ExpandableRecyclerviewActivity">
+        <activity android:name=".UI.ParticleViewActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
-        <activity android:name=".UI.SpinnerActivity">
-        </activity>
-        <activity android:name=".UI.ChrysanthemumLoadingDialogActivity">
-        </activity>
-        <activity android:name=".UI.WorkFlowActivity">
-        </activity>
-        <activity android:name=".UI.TreeViewActivity">
-        </activity>
-        <activity android:name=".UI.RecyclerViewEncapsulationActivity">
-        </activity>
-        <activity android:name=".UI.BigPictureActivity">
-        </activity>
-        <activity android:name=".UI.LaunchingViewActivity">
-        </activity>
-        <activity android:name=".UI.RecyclerviewAnimationActivity">
-        </activity>
+        <activity android:name=".UI.ExpandableRecyclerviewActivity"></activity>
+        <activity android:name=".UI.SpinnerActivity"></activity>
+        <activity android:name=".UI.ChrysanthemumLoadingDialogActivity"></activity>
+        <activity android:name=".UI.WorkFlowActivity"></activity>
+        <activity android:name=".UI.TreeViewActivity"></activity>
+        <activity android:name=".UI.RecyclerViewEncapsulationActivity"></activity>
+        <activity android:name=".UI.BigPictureActivity"></activity>
+        <activity android:name=".UI.LaunchingViewActivity"></activity>
+        <activity android:name=".UI.RecyclerviewAnimationActivity"></activity>
         <activity
             android:name=".UI.VideoPlayerActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden">
-        </activity>
-        <activity android:name=".UI.SecondFragmentActivity">
-        </activity>
-        <activity android:name=".UI.FragmentTestActivity">
-        </activity>
-        <activity android:name=".UI.SimpleLoadingBarActivity">
-        </activity>
-        <activity android:name=".UI.HintDialogActivity">
-        </activity>
-        <activity android:name=".UI.EventBusActivity">
-        </activity>
-        <activity android:name=".UI.RedCarpActivity">
-        </activity>
-        <activity android:name=".UI.AcceleratingBallActivity">
-        </activity>
-        <activity android:name=".UI.RatingBarActivity">
-        </activity>
+            android:configChanges="orientation|screenSize|keyboardHidden"></activity>
+        <activity android:name=".UI.SecondFragmentActivity"></activity>
+        <activity android:name=".UI.FragmentTestActivity"></activity>
+        <activity android:name=".UI.SimpleLoadingBarActivity"></activity>
+        <activity android:name=".UI.HintDialogActivity"></activity>
+        <activity android:name=".UI.EventBusActivity"></activity>
+        <activity android:name=".UI.RedCarpActivity"></activity>
+        <activity android:name=".UI.AcceleratingBallActivity"></activity>
+        <activity android:name=".UI.RatingBarActivity"></activity>
         <activity android:name=".UI.MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
         </activity>
     </application>
 

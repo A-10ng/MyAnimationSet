@@ -1,10 +1,7 @@
 package com.example.myanimationset.UI;
 
 import android.content.Context;
-import android.support.v4.widget.SwipeRefreshLayout;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -90,5 +87,10 @@ public class RecyclerViewEncapsulationActivity extends BaseRViewActivity {
             }
         });
         return adapter;
+    }
+
+    @Override
+    public void onPointerCaptureChanged(boolean hasCapture) {
+
     }
 }

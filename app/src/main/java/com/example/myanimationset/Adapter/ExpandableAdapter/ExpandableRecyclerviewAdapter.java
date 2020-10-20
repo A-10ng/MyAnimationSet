@@ -1,12 +1,13 @@
 package com.example.myanimationset.Adapter.ExpandableAdapter;
 
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.util.SparseBooleanArray;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.myanimationset.Bean.HotelEntity;
 import com.example.myanimationset.R;

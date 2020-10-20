@@ -14,7 +14,7 @@
 
     <application
         android:allowBackup="true"
-        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -22,56 +22,35 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.myanimationset.UI.ExpandableRecyclerviewActivity" >
-        </activity>
-        <activity android:name="com.example.myanimationset.UI.SpinnerActivity" >
-        </activity>
-        <activity android:name="com.example.myanimationset.UI.ChrysanthemumLoadingDialogActivity" >
-        </activity>
-        <activity android:name="com.example.myanimationset.UI.WorkFlowActivity" >
-        </activity>
-        <activity android:name="com.example.myanimationset.UI.TreeViewActivity" >
-        </activity>
-        <activity android:name="com.example.myanimationset.UI.RecyclerViewEncapsulationActivity" >
-        </activity>
-        <activity android:name="com.example.myanimationset.UI.BigPictureActivity" >
-        </activity>
-        <activity android:name="com.example.myanimationset.UI.LaunchingViewActivity" >
-        </activity>
-        <activity android:name="com.example.myanimationset.UI.RecyclerviewAnimationActivity" >
-        </activity>
-        <activity
-            android:name="com.example.myanimationset.UI.VideoPlayerActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden" >
-        </activity>
-        <activity android:name="com.example.myanimationset.UI.SecondFragmentActivity" >
-        </activity>
-        <activity android:name="com.example.myanimationset.UI.FragmentTestActivity" >
-        </activity>
-        <activity android:name="com.example.myanimationset.UI.SimpleLoadingBarActivity" >
-        </activity>
-        <activity android:name="com.example.myanimationset.UI.HintDialogActivity" >
-        </activity>
-        <activity android:name="com.example.myanimationset.UI.EventBusActivity" >
-        </activity>
-        <activity android:name="com.example.myanimationset.UI.RedCarpActivity" >
-        </activity>
-        <activity android:name="com.example.myanimationset.UI.AcceleratingBallActivity" >
-        </activity>
-        <activity android:name="com.example.myanimationset.UI.RatingBarActivity" >
-        </activity>
-        <activity android:name="com.example.myanimationset.UI.MainActivity" >
+        <activity android:name="com.example.myanimationset.UI.ParticleViewActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <provider
-            android:name="com.android.tools.ir.server.InstantRunContentProvider"
-            android:authorities="com.example.myanimationset.com.android.tools.ir.server.InstantRunContentProvider"
-            android:multiprocess="true" />
+        <activity android:name="com.example.myanimationset.UI.ExpandableRecyclerviewActivity" />
+        <activity android:name="com.example.myanimationset.UI.SpinnerActivity" />
+        <activity android:name="com.example.myanimationset.UI.ChrysanthemumLoadingDialogActivity" />
+        <activity android:name="com.example.myanimationset.UI.WorkFlowActivity" />
+        <activity android:name="com.example.myanimationset.UI.TreeViewActivity" />
+        <activity android:name="com.example.myanimationset.UI.RecyclerViewEncapsulationActivity" />
+        <activity android:name="com.example.myanimationset.UI.BigPictureActivity" />
+        <activity android:name="com.example.myanimationset.UI.LaunchingViewActivity" />
+        <activity android:name="com.example.myanimationset.UI.RecyclerviewAnimationActivity" />
+        <activity
+            android:name="com.example.myanimationset.UI.VideoPlayerActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+        <activity android:name="com.example.myanimationset.UI.SecondFragmentActivity" />
+        <activity android:name="com.example.myanimationset.UI.FragmentTestActivity" />
+        <activity android:name="com.example.myanimationset.UI.SimpleLoadingBarActivity" />
+        <activity android:name="com.example.myanimationset.UI.HintDialogActivity" />
+        <activity android:name="com.example.myanimationset.UI.EventBusActivity" />
+        <activity android:name="com.example.myanimationset.UI.RedCarpActivity" />
+        <activity android:name="com.example.myanimationset.UI.AcceleratingBallActivity" />
+        <activity android:name="com.example.myanimationset.UI.RatingBarActivity" />
+        <activity android:name="com.example.myanimationset.UI.MainActivity" >
+        </activity>
     </application>
 
 </manifest>

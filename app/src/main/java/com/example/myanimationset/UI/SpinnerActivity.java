@@ -1,13 +1,14 @@
 package com.example.myanimationset.UI;
 
 import android.graphics.drawable.Drawable;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.PopupWindow;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.myanimationset.Bean.SpinnerBean;
 import com.example.myanimationset.MyView.SpinnerPopupWindow;

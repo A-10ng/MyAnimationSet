@@ -1,16 +1,10 @@
 package com.example.library.manager;
 
-import android.support.annotation.NonNull;
-import android.support.v4.util.SparseArrayCompat;
-import android.support.v7.widget.RecyclerView;
-import android.util.SparseArray;
-import android.view.ViewGroup;
+
+import androidx.collection.SparseArrayCompat;
 
 import com.example.library.RViewHolder;
-import com.example.library.listener.ItemListener;
 import com.example.library.listener.RViewItem;
-
-import java.util.List;
 
 /**
  * author：LongSh1z

@@ -1,7 +1,5 @@
 package com.example.myanimationset.DesignMode.WorkFlow;
 
-import android.print.PrinterId;
-import android.support.v4.util.SparseArrayCompat;
 import android.util.Log;
 import android.util.SparseArray;
 
